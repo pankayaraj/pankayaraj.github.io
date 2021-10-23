@@ -251,6 +251,64 @@ window.addEventListener('load', () => {
 
   });
 
+    
+    
+/**
+   * FAQ isotope and filter
+   this.setAttribute(".filter-safeRL")
+   */
+document.getElementById("default").click();
+    
+
+
+          
+window.addEventListener('load', () => {
+    let faqContainer = select('.faq-container');
+    
+    if (faqContainer) {
+      let faqIsotope = new Isotope(faqContainer, {
+        itemSelector: '.faq-item'
+      });
+        
+        
+      faqIsotope.arrange({
+          filter: ".filter-safeRL"
+      });
+        faqIsotope.on('arrangeComplete', function() {
+        AOS.refresh()
+        });
+        
+        
+        
+        
+      let faqFilters = select('#faq-flters li', true);
+        
+      on('click', '#faq-flters li', function(e) {
+        e.preventDefault();
+        faqFilters.forEach(function(el) {
+        
+          el.classList.remove('filter-active');
+        });
+          
+        this.classList.add('filter-active');
+        
+    
+        faqIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        faqIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+          
+        
+          
+      }, true);
+    }
+
+  });
+
+    
+
   /**
    * Initiate portfolio lightbox 
    */
@@ -317,3 +375,33 @@ window.addEventListener('load', () => {
   });
 
 })()
+
+
+
+
+
+
+
+
+/**
+   * FAQ
+*/
+
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+
