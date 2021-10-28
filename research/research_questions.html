@@ -116,15 +116,35 @@
                           <li>  
                              <button type="button" class="collapsible">Implementing a hard/ soft constraint on actions values that are selected by agent.</button>
                              <div class="content">
+                                 <h5>Motivation</h5>
+                                 
                                 <p>When it comes to constrained reinforcement learning I do primarily see the problem as something that needs to be seen in two perspectives. One is the need to maintain the constraints imposed at all times (for instance scenarios where certain limitations should be observed in order to avoid damage to the robot) while the other being scenarios where the bounds need to be observed only on the testing phase. When it concerns the latter I believe that any kind of structure that imposes constraint as a subordinate reward would suffice. But when it comes to the former the computational cost of bringing the non optimal feature (action in most cases) to an optimum at every stage and computation of the gradient with regards to that process seems to be higher. (In most cases involves finding the inverse of larger matrices etc)
                                 I do think that the computational cost in the former is unavoidable if we are to never breach the constraints on training even. But I do have my eyes on ways to reduce the computational cost in the latter which I will elaborate further below. </p>
-                                 
+                        
                                 <p>
                                 If the constraints are convex in the function space (neural network in our case) I think we can play a two player lagrangian dual primal game and achieve the optimal constraint (achieve a pure Nash equilibrium since the minimax theorem holds) with a first order process who’s gradient can be computed similar to what’s done in model agnostic meta learning. What’s more interesting is the non convex setting where the constraints are not only non convex but also the gradients are not available at all times (due to discontinuity). I am also excited about the prospects of exploiting the recent developments on proxy constraints  in the same setting as above. </p>
                              </div>
-                          </li>  
+                          </li> 
+                         
+                         
+                         
+                         <li>  
+                             <button type="button" class="collapsible">Safe RL via the modification of optimization criterion when due to stochasticity in the environment.</button>
+                             <div class="content">
+                                 <h5>Background</h5>
+                                 
+                                 <p>When there is variability in the policy then there is always a possibility of a certain agent at a certain time getting to the sub optimal trajectory which can be a harmful one. Thus a generally used option with this regard is to explicitly make sure that return of the least performing trajectory of the policy is maximized. This can ensure that the least performing trajectory itself is not in a low return (which is assumed to be damaging) is not as bad. This does come with its own issues as this objective can be too pessimistic and the overall objective of the policy can be suboptimal. There are some alternatives to this which either only selects the low return trajectory that passes the ɑ value threshold thus the algorithm is not that pessimistic or else have dual objective (regular one and the earlier mentioned min max criterion) via a floating parameter between 0 and 1. </p>
+
+                                <p></p>
+                             </div>
+                          </li> 
     
                     </ol>
+                     
+                     
+                     
+                     
+                     <h4></h4>
                      
                  </div>
 
