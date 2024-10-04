@@ -56,11 +56,103 @@
             <tr>
             <td style="padding:0px;width:100%;vertical-align:middle">
                 <heading><b><u>I. Research Summary</u></b></heading>
-              <p>In general my research interests are on Reinforcement Learning(RL). My past experiences in the field of RL span across continual RL, multi agent RL, bayesian RL, bandits. Currently, I am interested in imitation, constrained RL and explainability in RL. Below you can find my past publications and projects. 
+              <p>In general my research interests are on Reinforcement Learning(RL). My past experiences in the field of RL span across RLHF, constrainted RL, continual RL, multi agent RL, bayesian RL, bandits. Currently, I am interested working on LLM and RLHF poisoning. Below you can find my past publications and projects. 
               </p>
             </td>
           </tr>
         </tbody></table>
+          
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <heading><b><u>Current Research </u></b></heading>
+        </tbody></table>
+        
+        <br>
+          
+          
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+    
+            <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='nerfactor_image'>
+                      <img src='pictures/AdvBDGen.png' width="180"></div>
+                    <img src='pictures/AdvBDGen.png' width="180">
+                  </div>
+                  <script type="text/javascript">
+                    function nerfactor_start() {
+                      document.getElementById('nerfactor_image').style.opacity = "1";
+                    }
+
+                    function nerfactor_stop() {
+                      document.getElementById('nerfactor_image').style.opacity = "0";
+                    }
+                    nerfactor_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="">
+                        <papertitle>AdvBDGen: Adversarially Fortified Prompt-Specific Fuzzy Backdoor Generator Against LLM Alignment</papertitle>
+                      </a>
+                      <br>
+                      
+                      <strong>Pankayaraj</strong>,
+                        <a>Udari Madhushani Sehwag</a>,
+                        <a>Michael-Andrei Panaitescu-Liess</a>,
+                        <a href="https://furong-huang.com/">Furong Huang</a>,
+
+                      <br>
+                      <b>Under Review</b>   <em>13 th <b>International Conference of Learning Representations (ICLR)</b>  Singapore, 2024 </em>
+                      <br>
+                    
+                      <p> With the growing adoption of reinforcement learning with human feedback (RLHF) for aligning large language models (LLMs), the risk of backdoor installation during alignment has increased, leading to unintended and harmful behaviors. Existing backdoor triggers are typically limited to fixed word patterns, making them detectable during data cleaning and easily removable post-poisoning. In this work, we explore the use of prompt-specific paraphrases as backdoor triggers, enhancing their stealth and resistance to removal during LLM alignment. We propose AdvBDGen, an adversarially fortified generative fine-tuning framework that automatically generates prompt-specific backdoors that are effective, stealthy, and transferable across models. AdvBDGen employs a generator-detector pair, fortified by an adversary, to ensure the installability and stealthiness of backdoors. It enables the crafting of complex triggers using as little as 3% of the fine-tuning data. Once installed, these backdoors can jailbreak LLMs during inference, demonstrate improved stability against perturbations compared to traditional constant triggers, and are harder to remove. These properties highlight the greater risks posed by such an adversarially crafted backdoors to LLM alignment.</p>
+                </td>   
+            </tr>
+        
+            
+            <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='nerfactor_image'>
+                      <img src='pictures/PoisonedParrot.png' width="180"></div>
+                    <img src='pictures/PoisonedParrot.png' width="180">
+                  </div>
+                  <script type="text/javascript">
+                    function nerfactor_start() {
+                      document.getElementById('nerfactor_image').style.opacity = "1";
+                    }
+
+                    function nerfactor_stop() {
+                      document.getElementById('nerfactor_image').style.opacity = "0";
+                    }
+                    nerfactor_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="">
+                        <papertitle>PoisonedParrot: Subtle Data Poisoning Attacks to Elicit Copyright-Infringing Content from Large Language Models</papertitle>
+                      </a>
+                      <br>
+                      <a>Michael-Andrei Panaitescu-Liess</a>,
+                      <strong>Pankayaraj</strong>,
+                        <a>Yigitcan Kaya Furong Huang</a>,
+                        <a>Bang An</a>,
+                        <a>Sicheng Zhu</a>,
+                        <a>Aakriti Agrawal</a>,
+                        <a href="https://furong-huang.com/">Furong Huang</a>,
+
+                      <br>
+                      <b>Under Review</b>   <em> <b>NeurIPS 2024 Workshop SafeGenAI</b>  Canada, 2024 </em>
+                      <br>
+                    
+                      <p>As the capabilities of large language models (LLMs) continue to expand, their usage has become increasingly prevalent. However, as reflected in numerous ongoing lawsuits related to LLM-generated content, addressing copyright infringement remains a significant challenge. In this paper, we introduce the first data poisoning attack specifically designed to induce the generation of copyrighted content by an LLM, even when the model has not been directly trained on the specific copyrighted material. We find that a straightforward attack—which integrates small fragments of copyrighted text into the poison samples—is surprisingly effective at priming the models to generate copyrighted content. Moreover, we demonstrate that current defenses are insufficient and largely ineffective against this type of attack, underscoring the need for further exploration of this emerging threat model.</p>
+                </td>   
+            </tr>
+        
+          
+
           
           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -70,7 +162,7 @@
         <br>
           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <h2><b><u>Large Language Model Alignment and Watermarking </u></b></h2>
+            <h2><b><u>Large Language Model Alignment and Copyright Generation </u></b></h2>
         </tbody></table>
           
           
@@ -142,7 +234,7 @@ non-backdoor attacks. </p>
           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
-            <p  style="color:slateblue;font-size:18px" ><b>2023 - 2024: <u><i>LLM Watermarks </i></u></b></p>
+            <p  style="color:slateblue;font-size:18px" ><b>2023 - 2024: <u><i>LLM Watermarking and Copyright Generation</i></u></b></p>
             
             <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
