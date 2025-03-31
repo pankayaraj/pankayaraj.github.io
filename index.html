@@ -83,6 +83,51 @@
             
             
         <p  style="color:slateblue;font-size:18px" ><b>2024 - 2024: <u><i>LLM Poisoning </i></u></b></p>
+              
+              <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='nerfactor_image'>
+                      <img src='pictures/RAP_part.png' width="180"></div>
+                    <img src='pictures/RAP_part.png' width="180">
+                  </div>
+                  <script type="text/javascript">
+                    function nerfactor_start() {
+                      document.getElementById('nerfactor_image').style.opacity = "1";
+                    }
+
+                    function nerfactor_stop() {
+                      document.getElementById('nerfactor_image').style.opacity = "0";
+                    }
+                    nerfactor_stop()
+                  </script>
+                </td>
+              
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="">
+                        <papertitle>RAGPart & RAGMask: Retrieval-Stage Defenses Against Corpus Poisoning in Retrieval-Augmented Generation</papertitle>
+                      </a>
+                      <br>
+                      
+                      <strong>Pankayaraj</strong>,
+                        <a href="https://furong-huang.com/">Furong Huang</a>,
+
+                      <br>
+                    <br>
+                      <b> Under Review</b>   <em>2 nd <b>Conference on Langauge Modelling (COLM)</b>  Canada, 2025 </em>
+                    <br>
+                        
+                    <!--
+                    <a href=""> Github/ </a>
+                    <a href=""> Paper/ </a>
+                    <a href=""> Website </a>
+                    -->
+                    
+                  <p>Retrieval-Augmented Generation (RAG) has emerged as a promising paradigm to enhance large language models (LLMs) with external knowl3 edge, reducing hallucinations and compensating for outdated informa4 tion. However, recent studies have exposed a critical vulnerability in RAG pipelines—corpus poisoning—where adversaries inject malicious doc6 uments into the retrieval corpus to manipulate model outputs. In this work, we propose two complementary retrieval-stage defenses: RAGPart and RAGMask. These methods are retriever-agnostic, lightweight, and re9 quire no modifications to the generation component. RAGPart leverages the inherent training dynamics of dense retrievers, exploiting document partitioning to detect anomalies, while RAGMask identifies suspicious to12 kens via similarity shifts under targeted masking. Across two benchmarks, four poisoning strategies, and four state-of-the-art retrievers, our defenses consistently reduce attack success rates while preserving utility in benign settings. We further introduce a new interpretable attack strategy to stress16 test our defenses. Our findings highlight the potential and limitations of retrieval-stage interventions, offering practical insights for robust RAGdeployments </p> 
+              
+                </td>  
+              </tr>
+          
             <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -101,7 +146,6 @@
                     nerfactor_stop()
                   </script>
                 </td>
-
                 <td style="padding:20px;width:75%;vertical-align:middle">
                       <a href="">
                         <papertitle>AdvBDGen: Adversarially Fortified Prompt-Specific Fuzzy Backdoor Generator Against LLM Alignment</papertitle>
