@@ -31,7 +31,7 @@
               <p style="text-align:center">
                 <name>Pankayaraj</name>
               </p>
-              <p>Currently, I am a PhD student at the <a href= "https://www.cs.umd.edu/">Department of Computer Science, University of Maryland</a> working with <a href="https://www.cs.umd.edu/people/furongh"> Prof. Furong Huang</a> . Before that I had worked as a research engineer at <a href="https://care-ai.smu.edu.sg/"> CARE AI Lab, Singapore Management University</a> under <a href="http://www.mysmu.edu/faculty/pradeepv/"> Prof. Pradeep Varakantham </a> on constrained reinforcement learning.
+              <p>Currently, I am a 3rd year PhD student at the <a href= "https://www.cs.umd.edu/">Department of Computer Science, University of Maryland</a> working with <a href="https://www.cs.umd.edu/people/furongh"> Prof. Furong Huang</a> . Before that I had worked as a research engineer at <a href="https://care-ai.smu.edu.sg/"> CARE AI Lab, Singapore Management University</a> under <a href="http://www.mysmu.edu/faculty/pradeepv/"> Prof. Pradeep Varakantham </a> on constrained reinforcement learning.
 
               </p>
               <p>
@@ -74,12 +74,57 @@
         </tbody></table>
           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <h2><b><u>Robust Retrival Augmented Retrival (RAG) </u></b></h2>
+            <h2><b><u>Robust Reward Modeling </u></b></h2>
         </tbody></table>
         
-        
+         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <p  style="color:slateblue;font-size:18px" ><b>2025 - 2025: <u><i> Robust Reward modeling for LLM alignment </i></u></b></p>
+        <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='nerfactor_image'>
+                      <img src='pictures/REFORM.png' width="180"></div>
+                    <img src='pictures/REFORM.png' width="180">
+                  </div>
+                  <script type="text/javascript">
+                    function nerfactor_start() {
+                      document.getElementById('nerfactor_image').style.opacity = "1";
+                    }
 
-        
+                    function nerfactor_stop() {
+                      document.getElementById('nerfactor_image').style.opacity = "0";
+                    }
+                    nerfactor_stop()
+                  </script>
+                </td>
+              
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="">
+                        <papertitle>Reward Models Can Improve Themselves: Reward-Guided Adversarial Failure Mode Discovery for Robust Reward Modeling</papertitle>
+                      </a>
+                      <br>
+                      <strong>Pankayaraj</strong>,
+                        <a href="https://furong-huang.com/">Furong Huang</a>,
+                      <br>
+                  
+                   <b> Under Review</b> on the   <em>  <b>Conference on Empirical Methods in Natural Language Processing</b>  Suzhou China, 2025 </em>
+                    <br>
+                        
+                    <!--
+                    <a href=""> Github/ </a>
+                    <a href=""> Paper/ </a>
+                    <a href=""> Website </a>
+                    -->
+                    
+            <p> Reward modeling (RM), which captures human preferences to align large language models (LLMs), is increasingly employed in tasks such as model fine-tuning, response filtering, and ranking. However, due to the inherent complexity of human preferences and the limited coverage of available datasets, reward models often fail under distributional shifts or adversarial perturbations. Existing approaches for identifying such failure modes typically rely on prior knowledge about preference distributions or failure attributes, limiting their practicality in real-world settings where such information is unavailable. In this work, we propose a tractable, preference-distribution-agnostic method for discovering reward model failure modes via reward-guided controlled decoding. Building on this, we introduce REFORM, a self-improving reward modeling framework that enhances robustness by using the reward model itself to guide the generation of falsely scored responses. These adversarial examples are then used to augment the training data and patch the reward model's misaligned behavior. We evaluate REFORM on two widely-used preference datasets—Anthropic Helpful-Harmless (HH) and PKU Beavertails—and demonstrate that it significantly improves robustness without sacrificing reward quality. Notably, REFORM preserves performance both in direct evaluation and in downstream policy training, and further improves alignment quality by removing spurious correlations. </p>
+                </td>  
+              </tr>
+        </table>  
+        <br>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <h2><b><u>Robust Retrival Augmented Retrival (RAG) </u></b></h2>
+        </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <p  style="color:slateblue;font-size:18px" ><b>2025 - 2025: <u><i>Defense against RAG Poisoning </i></u></b></p>
         <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
@@ -119,7 +164,7 @@
                     <a href=""> Website </a>
                     -->
                     
-                  <p>Retrieval-Augmented Generation (RAG) has emerged as a promising paradigm to enhance large language models (LLMs) with external knowl3 edge, reducing hallucinations and compensating for outdated informa4 tion. However, recent studies have exposed a critical vulnerability in RAG pipelines—corpus poisoning—where adversaries inject malicious doc6 uments into the retrieval corpus to manipulate model outputs. In this work, we propose two complementary retrieval-stage defenses: RAGPart and RAGMask. These methods are retriever-agnostic, lightweight, and re9 quire no modifications to the generation component. RAGPart leverages the inherent training dynamics of dense retrievers, exploiting document partitioning to detect anomalies, while RAGMask identifies suspicious to12 kens via similarity shifts under targeted masking. Across two benchmarks, four poisoning strategies, and four state-of-the-art retrievers, our defenses consistently reduce attack success rates while preserving utility in benign settings. We further introduce a new interpretable attack strategy to stress16 test our defenses. Our findings highlight the potential and limitations of retrieval-stage interventions, offering practical insights for robust RAGdeployments </p> 
+                  <p>Retrieval-Augmented Generation (RAG) has emerged as a promising paradigm to enhance large language models (LLMs) with external knowledge, reducing hallucinations and compensating for outdated information. However, recent studies have exposed a critical vulnerability in RAG pipelines—corpus poisoning—where adversaries inject malicious documents into the retrieval corpus to manipulate model outputs. In this work, we propose two complementary retrieval-stage defenses: RAGPart and RAGMask. These methods are retriever-agnostic, lightweight, and require no modifications to the generation component. RAGPart leverages the inherent training dynamics of dense retrievers, exploiting document partitioning to detect anomalies, while RAGMask identifies suspicious tokens via similarity shifts under targeted masking. Across two benchmarks, four poisoning strategies, and four state-of-the-art retrievers, our defenses consistently reduce attack success rates while preserving utility in benign settings. We further introduce a new interpretable attack strategy to stress test our defenses. Our findings highlight the potential and limitations of retrieval-stage interventions, offering practical insights for robust RAG deployments </p> 
               
                 </td>  
               </tr>
@@ -127,12 +172,12 @@
         <br>
           
          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <h2><b><u>Large Language Model Alignment and Copyright Generation </u></b></h2>
+            <h2><b><u>Adversarial Attacks on LLM Alignment and Copyright Generation </u></b></h2>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         
             
-        <p  style="color:slateblue;font-size:18px" ><b>2024 - 2024: <u><i>LLM Poisoning </i></u></b></p>
+        <p  style="color:slateblue;font-size:18px" ><b>2023 - 2024: <u><i>LLM Alignment Poisoning </i></u></b></p>
               
               
           
@@ -167,7 +212,7 @@
 
                       <br>
                     <br>
-                      <b>Published</b>   <em>38 th <b>Neurips Safe Generative AI Workshop 2024</b>  Canada, 2024 </em>
+                  <b><font color="green"> Published </font></b>   <em>38 th Neurips Safe Generative AI Workshop 2024  Canada, 2024 </em>
                       <br>
                       <b>Under Review</b>   <em>42 nd <b>International Conference on Machine Learning (ICML)</b>  Canada, 2025 </em>
                       <br>
@@ -180,6 +225,81 @@
                 </td>   
             </tr>
         
+            
+            
+        
+          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='nerfactor_image'>
+                      <img src='pictures/RLHF.jpeg' width="160"></div>
+                    <img src='pictures/RLHF.jpeg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function nerfactor_start() {
+                      document.getElementById('nerfactor_image').style.opacity = "1";
+                    }
+
+                    function nerfactor_stop() {
+                      document.getElementById('nerfactor_image').style.opacity = "0";
+                    }
+                    nerfactor_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="https://github.com/pankayaraj/ICML_2024_RLHFPoisoning">
+                        <papertitle>Is poisoning a real threat to LLM alignment? Maybe more so than you think</papertitle>
+                      </a>
+                      <br>
+                      
+                      <strong>Pankayaraj</strong>,
+                        <a>   Souradip Chakraborty</a>,
+                     <a>   Xiangyu Liu </a>,
+                     <a>   Yongyuan Liang </a>,
+                     <a href="https://furong-huang.com/">  Furong Huang </a>,
+
+                      <br>
+                      <b><font color="green"> Published </font></b> <em>39 th <b> Annual AAAI Conference on Artificial Intelligence 2025</b>  USA , 2025 </em>
+                      <br>
+                      <b><font color="green"> Published </font></b> <em>41 st ICML 2024 Workshop Models of Human Feedback for AI Alignment  Vienna, Austria , 2024 </em>
+                      <br>              
+                      <a href="https://github.com/pankayaraj/ICML_2024_RLHFPoisoning"> GitHub/ </a>
+                      
+                      <a href="https://arxiv.org/abs/2406.12091"> Paper</a>
+                    
+                      <p></p>
+                      <p>Recent advancements in Reinforcement Learning with Human Feedback (RLHF) have significantly impacted the alignment of Large Language Models (LLMs). The sensitivity of reinforcement learning algorithms such as Proximal Policy
+Optimization (PPO) has led to new line work on Direct Policy Optimization
+(DPO), which treats RLHF in a supervised learning framework. The increased
+practical use of these RLHF methods warrants an analysis of their
+vulnerabilities. In this work, we investigate the vulnerabilities of DPO to
+poisoning attacks under different scenarios and compare the effectiveness of
+preference poisoning, a first of its kind. We comprehensively analyze DPO's
+vulnerabilities under different types of attacks, i.e., backdoor and
+non-backdoor attacks, and different poisoning methods across a wide array of
+language models, i.e., LLama 7B, Mistral 7B, and Gemma 7B. We find that unlike
+PPO-based methods, which, when it comes to backdoor attacks, require at least
+4% of the data to be poisoned to elicit harmful behavior, we exploit the true
+vulnerabilities of DPO more simply so we can poison the model with only as much
+as 0.5% of the data. We further investigate the potential reasons behind the
+vulnerability and how well this vulnerability translates into backdoor vs
+non-backdoor attacks. </p>
+                </td>   
+            </tr>
+        
+          
+
+          
+          
+        
+          
+        
+          
+          
+         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+            <p  style="color:slateblue;font-size:18px" ><b>2024 - 2024: <u><i>Copyright Poisoning </i></u></b></p>
             
             <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -216,9 +336,9 @@
 
                       <br>
                     <br>
-                    <b>Published</b> <em> <b> Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025)</b>  New Mexico, 2025 </em>
+                    <b><font color="green"> Published </font></b> on the <em> <b> Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025)</b>  New Mexico, 2025 </em>
                       <br>
-                      <b>Published</b>   <em>38 th <b>Neurips Safe Generative AI Workshop 2024</b>  Canada, 2024 </em>
+                      <b><font color="green"> Published </font></b>   <em>38 th Neurips Safe Generative AI Workshop 2024  Canada, 2024 </em>
                        <br>
                       
                     <a href="https://openreview.net/forum?id=ZXgvPANlwe"> Paper</a>
@@ -226,81 +346,7 @@
                       <p>As the capabilities of large language models (LLMs) continue to expand, their usage has become increasingly prevalent. However, as reflected in numerous ongoing lawsuits related to LLM-generated content, addressing copyright infringement remains a significant challenge. In this paper, we introduce the first data poisoning attack specifically designed to induce the generation of copyrighted content by an LLM, even when the model has not been directly trained on the specific copyrighted material. We find that a straightforward attack—which integrates small fragments of copyrighted text into the poison samples—is surprisingly effective at priming the models to generate copyrighted content. Moreover, we demonstrate that current defenses are insufficient and largely ineffective against this type of attack, underscoring the need for further exploration of this emerging threat model.</p>
                 </td>   
             </tr>
-        
-          
-
-          
-          
-        
-          
-        
-          
-          
-         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
-            <p  style="color:slateblue;font-size:18px" ><b>2023 - 2024: <u><i>Reinforcement Learning with Human Feedback (RLHF) </i></u></b></p>
-            
-            <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='nerfactor_image'>
-                      <img src='pictures/RLHF.jpeg' width="160"></div>
-                    <img src='pictures/RLHF.jpeg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function nerfactor_start() {
-                      document.getElementById('nerfactor_image').style.opacity = "1";
-                    }
-
-                    function nerfactor_stop() {
-                      document.getElementById('nerfactor_image').style.opacity = "0";
-                    }
-                    nerfactor_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                      <a href="https://github.com/pankayaraj/ICML_2024_RLHFPoisoning">
-                        <papertitle>Is poisoning a real threat to LLM alignment? Maybe more so than you think</papertitle>
-                      </a>
-                      <br>
-                      
-                      <strong>Pankayaraj</strong>,
-                        <a>   Souradip Chakraborty</a>,
-                     <a>   Xiangyu Liu </a>,
-                     <a>   Yongyuan Liang </a>,
-                     <a href="https://furong-huang.com/">  Furong Huang </a>,
-
-                      <br>
-                      <b>Published</b> <em>39 th <b> Annual AAAI Conference on Artificial Intelligence 2025</b>  USA , 2025 </em>
-                      <br>
-                      <b>Published</b> <em>41 st ICML 2024 Workshop Models of Human Feedback for AI Alignment  Vienna, Austria , 2024 </em>
-                      <br>              
-                      <a href="https://github.com/pankayaraj/ICML_2024_RLHFPoisoning"> GitHub/ </a>
-                      
-                      <a href="https://arxiv.org/abs/2406.12091"> Paper</a>
-                    
-                      <p></p>
-                      <p>Recent advancements in Reinforcement Learning with Human Feedback (RLHF) have significantly impacted the alignment of Large Language Models (LLMs). The sensitivity of reinforcement learning algorithms such as Proximal Policy
-Optimization (PPO) has led to new line work on Direct Policy Optimization
-(DPO), which treats RLHF in a supervised learning framework. The increased
-practical use of these RLHF methods warrants an analysis of their
-vulnerabilities. In this work, we investigate the vulnerabilities of DPO to
-poisoning attacks under different scenarios and compare the effectiveness of
-preference poisoning, a first of its kind. We comprehensively analyze DPO's
-vulnerabilities under different types of attacks, i.e., backdoor and
-non-backdoor attacks, and different poisoning methods across a wide array of
-language models, i.e., LLama 7B, Mistral 7B, and Gemma 7B. We find that unlike
-PPO-based methods, which, when it comes to backdoor attacks, require at least
-4% of the data to be poisoned to elicit harmful behavior, we exploit the true
-vulnerabilities of DPO more simply so we can poison the model with only as much
-as 0.5% of the data. We further investigate the potential reasons behind the
-vulnerability and how well this vulnerability translates into backdoor vs
-non-backdoor attacks. </p>
-                </td>   
-            </tr>
-        
-          
           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
@@ -343,10 +389,10 @@ non-backdoor attacks. </p>
                      <a href="https://furong-huang.com/">  Furong Huang </a>,
 
                     <br>
-                    <b>Published</b> <em>39 th <b> Annual AAAI Conference on Artificial Intelligence 2025</b>  USA , 2025 </em>
+                    <b><font color="green"> Published </font></b> <em>39 th <b> Annual AAAI Conference on Artificial Intelligence 2025</b>  USA , 2025 </em>
 
                     <br>
-                    <b> Published </b> <em>3 rd NeurIPS 2024 Workshop AdvMLFrontiers <span style="color: red;">[<b>Best Paper</b>]</span> Vancover, Canada , 2024 </em>
+                    <b> <font color="green"> Published </font> </b> <em>3 rd NeurIPS 2024 Workshop AdvMLFrontiers <span style="color: red;">[<b>Best Paper</b>]</span> Vancover, Canada , 2024 </em>
                     <br>
             
                     
@@ -404,7 +450,7 @@ non-backdoor attacks. </p>
                         <a href="http://www.mysmu.edu/faculty/pradeepv/">  Pradeep Varakantham </a>,
                     <br>
                       <br>
-                         <b> Published </b> <em>37th <b>AAAI Conference on Artificial Intelligence</b>  Washington, D.C. USA , 2022 <b>Acceptance Rate: 19.6% </b></em>
+                         <b> <font color="green"> Published </font> </b> <em>37th <b>AAAI Conference on Artificial Intelligence</b>  Washington, D.C. USA , 2022 <b>Acceptance Rate: 19.6% </b></em>
                       <br>
                       
                       <a href="https://github.com/pankayaraj/AAAI_2023_Hierarchical-constrained-RL"> GitHub</a>
@@ -452,7 +498,7 @@ non-backdoor attacks. </p>
 
                       <br>
                     <br>
-                        <b> Published </b> <em> <b>Cognitive Computation journal. </b>Accepted in 2023. <b> Impact Factor: 5.4 </b></em>
+                        <b> <font color="green"> Published </font> </b> on the <em> <b>Cognitive Computation journal. </b>Accepted in 2023. <b> Impact Factor: 5.4 </b></em>
                       <br>
                       
                       <a href="https://github.com/pankayaraj/Cognitive_Computation-2023_Continual-Learning-With-Curiosity"> GitHub</a>
@@ -506,7 +552,7 @@ non-backdoor attacks. </p>
                       
                       <br>                
                       <br>
-                        <b> Published </b> <em> <b>ESCaPe (Symposium)</b>, Sri Lanka</em>, 2020. <b><span style="color: red;">[Best Research Paper]</span></b>
+                        <b><font color="green"> Published </font> </b> on the <em> <b>ESCaPe (Symposium)</b>, Sri Lanka</em>, 2020. <b><span style="color: red;">[Best Research Paper]</span></b>
                       <br>
 
                       <a href="https://www.researchgate.net/publication/351599797_Temporally_Aware_Multi-Agent_Reinforcement_Learning_in_Sparsely_Connected_Cooprative_Enviornments">Researchgate</a>
@@ -611,7 +657,7 @@ non-backdoor attacks. </p>
                       
                       <br>
                       <br>
-                       <b> Published </b> <em>59th <b>IEEE Conference on Decision and Control(IEEE CDC)</b>, Jeju Island, Republic of Korea 2020 <b>Acceptance Rate: 52.7% </b></em>
+                       <b><font color="green"> Published </font> </b> one the <em>59th <b>IEEE Conference on Decision and Control(IEEE CDC)</b>, Jeju Island, Republic of Korea 2020 <b>Acceptance Rate: 52.7% </b></em>
                       <br>
 
                       <a href="https://arxiv.org/abs/2003.12968">arXiv</a>
@@ -655,7 +701,7 @@ non-backdoor attacks. </p>
                       
                       <br>
                       <br>
-                        <b> Published </b> <em> <b>European Control Conference(ECC)</b>, Saint Petersburg, Russia 2020 <b>Acceptance Rate: 58% </b></em>, 
+                        <b> <font color="green"> Published </font> </b> on the <em> <b>European Control Conference(ECC)</b>, Saint Petersburg, Russia 2020 <b>Acceptance Rate: 58% </b></em>, 
                       <br>
 
                       <a href="https://arxiv.org/abs/1910.02635">arXiv</a>
@@ -711,7 +757,7 @@ non-backdoor attacks. </p>
                       <a href="http://www.ce.pdn.ac.lk/academic-staff/isuru-nawinne/">Isuru Nawinne</a>,
                       <br>
                       <br>
-                                    <em><b>ICIIS</b>, Sri Lanka</em>, 2019
+                        <b><font color="green"> Published </font></b>            <em><b>ICIIS</b>, Sri Lanka</em>, 2019
                       <br>
 
                       <a href="https://arxiv.org/pdf/1910.04725.pdf">arXiv</a>
@@ -728,6 +774,7 @@ non-backdoor attacks. </p>
           
           
           
+        <!--
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td>
@@ -746,11 +793,12 @@ non-backdoor attacks. </p>
           </tr>		
 					
         </tbody></table>
+        -->
           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td>
-                <heading><b><u>IV. Projects (These are my undergrad projects)</u></b></heading>
+                <heading><b><u>III. Projects (These are mostly my undergrad projects)</u></b></heading>
             </td>
           </tr>
         </tbody></table>
