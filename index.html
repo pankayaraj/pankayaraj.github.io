@@ -80,7 +80,59 @@
             <h2><b><u>LLM Reasoning </u></b></h2>
         </tbody></table>
         
-         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <p  style="color:slateblue;font-size:18px" ><b>2026 - 2026: <u><i> LLM Reasoning </i></u></b></p>
+        <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='nerfactor_image'>
+                      <img src='pictures/Compliance2LoRA.png' width="200"></div>
+                    <img src='pictures/Compliance2LoRA.png' width="200">
+                  </div>
+                  <script type="text/javascript">
+                    function nerfactor_start() {
+                      document.getElementById('nerfactor_image').style.opacity = "1";
+                    }
+
+                    function nerfactor_stop() {
+                      document.getElementById('nerfactor_image').style.opacity = "0";
+                    }
+                    nerfactor_stop()
+                  </script>
+                </td>
+              
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="https://arxiv.org/abs/2607.27594">
+                        <papertitle>Compliance2LoRA: On-Demand Safety Alignment on Arbitrary Policy Subsets via Hypernetwork-Generated LoRA Adapters</papertitle>
+                      </a>
+                      <br>
+                      <strong>Pankayaraj</strong>,
+                      <a href="https://furong-huang.com/">Furong Huang</a>,
+                      <br>
+                  
+                  
+                  <b> Under Review</b> at   <em>  <b>AAAI 2027 </b> </em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2607.27594"> Paper/  </a>
+                  <a href="https://github.com/pankayaraj/Compliance2LoRA"> Github </a>
+                  <!--<a href=""> Website </a>-->
+                    
+                  <p>Post-training alignment in large reasoning models (LRMs) has significantly improved their adaptability to diverse safety compliance settings. However, as LRMs personalization for downstream users takes center stage, the demand for varying levels of policy compliance grows as different user-specific LRMs must adhere to distinct subsets of safety policies. Training a separate LRM for each policy subset introduces severe combinatorial
+overhead. While in context learning methods overcome this combinatorial overhead, they introduce additional
+computational challenges associated with long context generation. To address this challenge, we propose
+Compliance2LoRA, a unified adaptive hypernetwork-based framework for multi-policy compliance. In our
+framework, safety policies serve as customizable inputs to a LoRA adapter generator, which learns to produce
+policy compliant LoRA weights for downstream LRM. When added to the LRM these weights enable the
+generation of responses compliant with the specified policy subsets. In this work, we demonstrate that
+training such a hypernetwork enables on-demand policy adjustments on a single LRM without sacrificing task
+performance across reasoning models of different sized and different evaluation datasets. This highlights the
+effectiveness and practicality of adaptive hypernetwork based alignment in LRMs. </p>         
+          </td>  
+              </tr>
+        </table>  
+        <br>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <p  style="color:slateblue;font-size:18px" ><b>2026 - 2026: <u><i> LLM Reasoning </i></u></b></p>
         <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
